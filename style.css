@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Patrick+Hand&display=swap');
+
+@font-face {
+    font-family: "idroid";
+    src: url(/html-css/Exercícios/desafios/desafio010/fontes/idroid.otf)
+}
+
+:root {
+    --corClara: rgb(75, 170, 75);
+    --corEscura: rgb(27, 114, 27);
+    --CorEscuraTransparente: rgba(75, 170, 75, 0.548);
+    --corMaisEscura: rgb(35, 78, 35);
+}
+
+/*header*/
+
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--corClara);
+    background-image: linear-gradient(to bottom, var(--corClara), var(--corEscura) )
+}
+.textoHeader {
+    text-align: center;
+    font-weight: lighter;
+}
+
+h1.textoHeader {
+    font-family: "Bebas Neue";
+    font-size: 3em;
+    color:var(--corClara) ;
+    padding-top: 50px;
+    margin: 0px;
+}
+
+h1.textoHeader:hover {
+    font-size: 3.1em;
+    transition-duration: 0.5s;
+}
+
+#tituloHover {
+    text-decoration: none;
+    
+}
+h2.textoHeader {
+    font-size: .8em;
+    margin-top: -15px;
+    position: relative;
+    width: 350px;
+    margin: 0px auto
+
+}
+
+header {
+    background-image: linear-gradient(black 55%, rgb(2, 7, 2));
+    color: white;
+    width: 100%;
+
+}
+
+nav {
+    padding: 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 40px 0px 0px 0px;
+    background-color: rgb(22, 22, 22);
+}
+
+header li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 10px;
+    font-size: 10px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 50px;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.103) 1px 4px 5px ;
+
+}
+
+header li:hover {
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--corClara);
+    margin: 0px;
+    padding: 8px;
+    border-radius: 50px;
+    transition-duration: 0.4s;
+}
+
+a.menu {
+    text-decoration: none;
+    color:ivory;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+/* ----------- */
+
+/*main*/
+
+main {
+    min-width: 350px;
+    max-width: 700px;
+    background-color: white;
+    margin: 15px auto;
+    padding: 10px 25px;
+    text-align: justify;
+    border-radius: 5px;
+}
+
+h3#titulo-principal {
+    font-size: 2em;
+    font-family: "Bebas Neue";
+    font-weight: lighter;
+    text-align: center;
+    margin: 20px 8px;
+}
+
+.titulos {
+    font-family: "Bebas Neue";
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1.7em;
+    background-color: var(--CorEscuraTransparente)
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#android-grande {
+    display: flex;
+    min-width: 320px;
+}
+
+#irina {
+    display: flex;
+    min-width:320px;
+   
+}
+
+#bugdroid {
+    display: block;
+    margin: auto;
+    max-width: 250px;
+    min-width: 100px;
+}
+
+a.links {
+    text-decoration: none;
+    color:var(--corMaisEscura);
+    font-weight:bolder;
+    background-color: var(--CorEscuraTransparente)
+}
+
+#extra  a.links {
+    font-size: 1em;
+}
+
+a.links:hover {
+    text-decoration: underline;
+    color:rgb(2, 7, 2);
+    font-size: 1.1em;
+    transition-duration: 0.7s;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+.marker {
+    color:var(--corClara);
+}
+
+p {
+    text-indent: 50px;
+}
+
+#extra > p {
+    text-indent: 50px;
+    margin: 20px 20px;
+    padding: 0px;
+}
+
+#extra {
+    border-radius: 20px;
+    margin: 30px auto;
+    background-color:var(--corClara);
+    padding: 0px 0px 20px 0px;
+}
+
+h4 {
+    background-color: var(--corMaisEscura);
+    padding: 10px 20px 10px 20px ;
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+}
+
+#extra ul {
+    columns: 2;
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--corClara);
+    background-color:rgb(15, 15, 15);
+    transition-duration: 0.3s;
+}
